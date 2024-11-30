@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #505050;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border-radius: 50%;
+    border: none;
+    margin: 3px;
+    min-height: 38px;
+    min-width: 40px;
+}
+#answer-div{
+    margin: 2px 10px;
+}
+#answer{
+    background-color: #505050;
+    height:100%;
+    padding: 10px;
+    max-height: 150px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #D4D4D2;
+    text-align: end;
+    font-size: 1rem;
+}
+#container{
+    padding: 20px 0px;
+    margin: auto;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10%;
+    background-color: #1C1C1C;
+}
+/* .orange-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-left: 5px;
+    padding: 0;
+} */
+.orange-buttons, #equalBtn{
+    background-color: #FF9500;
+    color: #f4f4f4;
+    /* width: 30px; */
+}
+/* .button-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 10px 10px;
+} */
+.numbers button{
+    background-color: #505050;
+    color: #D4D4D2;
+}
+/* .numbers div, #grey-buttons{
+    padding:3px 0;
+} */
+#grey-buttons button{
+    background-color: #D4D4D2;
+    color: #1C1C1C;
+    /* gap: 8px; */
+}
+.button-container{
+    display: flex;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers button[data-zero]{
+    grid-column: span 2;
+}
+@media (max-width: 530px){
+    #container{
+        width: 80%;
+    }
+}
+@media(min-width:530px) and (max-width:768px){
+    #container{
+        width: 50%;
+    }
+}

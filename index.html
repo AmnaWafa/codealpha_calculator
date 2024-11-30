@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <div id="answer-div">
+            <input type="text" name="answer" id="answer">
+        </div>
+        <div class="button-container">
+          <div class="left-side">
+            <div id="grey-buttons">
+              <button id="clearBtn">C</button>
+              <button id="delBtn">DEL</button>
+              <button id="mod">%</button>
+            </div>
+            <div class="numbers">
+              <button>9</button>
+              <button>8</button>
+              <button>7</button>
+              <button>6</button>
+              <button>5</button>
+              <button>4</button>
+              <button>3</button>
+              <button>2</button>
+              <button>1</button>
+              <button data-zero>0</button>
+              <button>.</button>
+            </div>
+          </div>
+          <div class="right-side">
+            <button class="orange-buttons">÷</button>
+            <button class="orange-buttons">×</button>
+            <button class="orange-buttons">-</button>
+            <button class="orange-buttons">+</button>
+            <button id="equalBtn">=</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
